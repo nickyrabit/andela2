@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ANDELA2</string>
+    <string name="price_hint">Price (Numbers only)</string>
+    <string name="deal_hint">Deal Title</string>
+    <string name="description_hint">Description</string>
+    <string name="save_menu">save</string>
+    <string name="delete_menu">Delete</string>
 </resources>

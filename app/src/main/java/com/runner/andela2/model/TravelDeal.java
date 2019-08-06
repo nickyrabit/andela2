@@ -1,20 +1,28 @@
 package com.runner.andela2.model;
 
-public class TravelDeals {
+import java.io.Serializable;
+
+public class TravelDeal implements Serializable {
 
     private String id;
     private String title;
     private String description;
     private String price;
     private String imageUrl;
+    private String imageName;
 
-    public TravelDeals(String id, String title, String description, String price, String imageUrl) {
-        this.id = id;
+
+    public TravelDeal(){}
+
+    public TravelDeal( String title, String description, String price, String imageUrl,String imageName) {
         this.title = title;
         this.description = description;
         this.price = price;
         this.imageUrl = imageUrl;
+        this.imageName= imageName;
     }
+
+
 
     public String getId() {
         return id;
@@ -54,5 +62,13 @@ public class TravelDeals {
 
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
+    }
+
+    public String getImageName() {
+        return imageName;
+    }
+
+    public void setImageName(String imageName) {
+        this.imageName = imageName;
     }
 }
